@@ -1,3 +1,6 @@
+## Live Project
+Click here or paste the link in google to try the app                                                                              https://dataanalysismlprojects-ngpfn9ctzhcujcn3tecdus.streamlit.app
+
 # E-commerce Customer Purchase Prediction
 
 A machine learning project that predicts whether an online shopper will make a purchase or not, helping e-commerce businesses target the right customers at the right time.
