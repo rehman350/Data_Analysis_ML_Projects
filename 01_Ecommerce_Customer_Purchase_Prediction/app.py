@@ -1,5 +1,6 @@
 # app.py — Streamlit Web Application
 # Yeh file Jupyter se BAHAR banao — notepad/vscode mein
+import os
 import streamlit as st
 import joblib
 import json
@@ -16,9 +17,10 @@ st.set_page_config(
 # ---- Load Model ----
 @st.cache_resource
 def load_model():
-    model  = joblib.load('purchase_model.pkl')
-    scaler = joblib.load('scaler.pkl')
-    with open('feature_names.json') as f:
+    base_path = os.path.dirname(__file__)
+    model  = joblib.load(os.path.join(base_path, 'purchase_model.pkl'))
+    scaler = joblib.load(os.path.join(base_path, 'scaler.pkl'))
+    with open(os.path.join(base_path, 'feature_names.json')) as f:
         features = json.load(f)
     return model, scaler, features
 
