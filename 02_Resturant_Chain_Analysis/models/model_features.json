@@ -1,0 +1,1 @@
+{"features": ["branch_encoded", "city_encoded", "order_year", "week", "total_orders", "avg_order_value", "avg_feedback", "total_items", "discount_orders", "prev_week_revenue", "prev_2week_revenue"]}
